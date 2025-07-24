@@ -11,6 +11,7 @@ dependencies = [
     "pluggy==1.6.0",
     "pygments==2.19.2",
     "pytest==8.4.1",
+    "pytest-mock>=3.14.1",
     "ruff>=0.12.4",
     "sqlalchemy==2.0.41",
     "typing-extensions==4.14.1",
