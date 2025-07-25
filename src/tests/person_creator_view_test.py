@@ -1,4 +1,4 @@
-from .person_creator_view import PersonCreatorView
+from src.views.person_creator_view import PersonCreatorView
 
 
 class MockController:
