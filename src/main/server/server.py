@@ -4,6 +4,7 @@ from src.models.sqlite.settings.connection import (
     db_connection_handler,
 )
 from src.main.routes.pets_routes import pets_router
+from src.main.routes.person_routes import person_routes
 
 db_connection_handler.connect_to_db()
 app = FastAPI()
@@ -16,3 +17,4 @@ app.add_middleware(
 )
 
 app.include_router(pets_router)
+app.include_router(person_routes)
