@@ -4,7 +4,6 @@ version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.13"
 dependencies = [
-    "black>=25.1.0",
     "fastapi>=0.116.1",
     "iniconfig==2.1.0",
     "mock-alchemy==0.2.6",
@@ -13,7 +12,6 @@ dependencies = [
     "pygments==2.19.2",
     "pytest==8.4.1",
     "pytest-mock>=3.14.1",
-    "ruff>=0.12.5",
     "sqlalchemy==2.0.41",
     "typing-extensions==4.14.1",
     "uvicorn>=0.35.0",
