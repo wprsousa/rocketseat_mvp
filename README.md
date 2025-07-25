@@ -1,4 +1,4 @@
-# Implementação do Padrão MVP
+# Implementação do Padrão MVC
 
 Um projeto Python de estudo das aulas da Rocketseat demonstrando a implementação do padrão arquitetural MVC (Model-View-Controller).
 
