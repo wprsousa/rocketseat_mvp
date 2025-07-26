@@ -1,5 +1,6 @@
 import re
 from src.models.sqlite.interfaces.people_repository import PeopleRepositoryInterface
+from src.errors.error_types.http_bad_request import HttpBadRequestError
 from .interfaces.person_creator_controller import PersonCreatorControllerInterface
 
 
@@ -26,7 +27,7 @@ class PersonCreatorController(PersonCreatorControllerInterface):
         if non_valid_caracteres.search(first_name) or non_valid_caracteres.search(
             last_name
         ):
-            raise Exception("Nome da pessoa inválido")
+            raise HttpBadRequestError("Nome da pessoa inválido")
 
     def __insert_person_db(
         self, first_name: str, last_name: str, age: int, pet_id: int
